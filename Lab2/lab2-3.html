@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration form</title>
+</head>
+<body>
+    <table style="width: 95%; 
+                  margin: 20px; 
+                  text-decoration: none; 
+                  align-items: center;
+                  text-align: center;
+                  font-weight: 600;">
+        <tr>
+            <td style="height: 50px; background-color: aquamarine;">
+                <a href="./lab2-1.html" style="text-decoration: none; color: black;">Introduction video</a>
+            </td>
+
+            <td style="height: 50px; background-color: rgb(255, 149, 20);">
+                <a href="./lab2-2.html" style="text-decoration: none; color: black;">Name by Canvas</a>  
+            </td>
+
+            <td style="height: 50px; background-color: rgb(255, 253, 127);">
+                <a href="./lab2-3.html" style="text-decoration: none; color: black;">Registration form</a>
+            </td>
+        </tr>
+    </table>
+
+    <div style="text-align: center;
+                margin-top: 15px;
+                border-radius: 5px;
+                max-width: 600px;
+                margin: 15px auto;">
+
+        <form action="/submit" method="post" style="text-align:">
+            <div class="form-group" style="margin-bottom: 15px; padding: 5px;">
+                <h1>Register Detial</h1>
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" placeholder="Enter your name" required>
+            </div>
+            <div class="form-group" style="margin-bottom: 15px;">
+                <label for="dob">Date of Birth</label>
+                <input type="date" id="dob" name="dob" required>
+            </div>
+            <div class="form-group" style="margin-bottom: 15px;">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email" required>
+            </div>
+            <div class="form-group" style="margin-bottom: 15px;">
+                <label for="photo">Photo</label>
+                <input type="file" id="photo" name="photo" >
+            </div>
+            <div class="form-group" style="margin-bottom: 15px;">
+                <label for="address">Address</label>
+                <textarea id="address" name="address" placeholder="Enter your address" rows="4" required></textarea>
+            </div>
+            <div class="form-group" style="margin-bottom: 15px;">
+                <button type="submit">Register</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>

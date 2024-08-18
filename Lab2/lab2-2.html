@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Name by Canvas</title>
+</head>
+<body>
+    <table style="width: 95%; 
+                  margin: 20px; 
+                  text-decoration: none; 
+                  align-items: center;
+                  text-align: center;
+                  font-weight: 600;">
+        <tr>
+            <td style="height: 50px; background-color: aquamarine;">
+                <a href="./lab2-1.html" style="text-decoration: none; color: black;">Introduction video</a>
+            </td>
+
+            <td style="height: 50px; background-color: rgb(255, 149, 20);">
+                <a href="./lab2-2.html" style="text-decoration: none; color: black;">Name by Canvas</a>  
+            </td>
+
+            <td style="height: 50px; background-color: rgb(255, 253, 127);">
+                <a href="./lab2-3.html" style="text-decoration: none; color: black;">Registration form</a>
+            </td>
+        </tr>
+    </table>
+    <div style="text-align: center; margin-top: 15px;">
+        <img src="./assets/profile.jpg" alt="" style="width: 150px; border-radius: 50%; margin-top: 20px;">
+    </div>
+
+    <div style="text-align: center; margin-top: 15px;">
+        <canvas id="nameCanvas"  width="auto" height="200" style="position: absolute; right: 40%;">
+            ...
+        </canvas>
+    </div>
+    
+
+        
+    <script>
+        var c = document.getElementById("nameCanvas");
+        var ctx = c.getContext("2d");
+        ctx.font = "30px Arial";
+        ctx.strokeStyle = 'blue';
+        ctx.strokeText("Amornthida Butwong",10,50);
+        ctx.strokeText("Yufa",130,100);
+        ctx.strokeText("66102010589",70,150);
+    </script>
+</body>
+</html>
