@@ -3,48 +3,100 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Amornthida - Personal Webpage</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Amornthida-Personal Webpage</title>
+    <!-- css file -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Remix Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet"/>
 </head>
 <body>
-    <header>
-        <h1>Amornthida,</h1>
+    <header class="header">
+        <h1>Amornthida Butwong</h1>
+        <img src="./img/profile.jpg" alt="">
         <p>Welcome to my personal webpage! Here you can learn more about me, my work, and how to get in touch.</p>
     </header>
 
-    <section>
+    <section class="about-me">
         <h2>About Me</h2>
-        <p>Hello! I am Amornthida, a passionate Student. I specialize in Design. With a strong background in design, I have worked on numerous projects that focus on website game ui.</p>
+        <i class="ri-star-fill"></i>
+        <div class="about-me-text">
+            Hello! I am <p class="sp-text">Amornthida Butwong</p>, a passionate <p class="sp-text-2">Data Engineering</p> student at Srinakarinwirot University with a strong focus on <p class="sp-text-3">web design.</p> 
+            I specialize in <p class="sp-text">creating visually appealing</p> and <p class="sp-text-3">user-friendly web interfaces</p>. With a background in <p class="sp-text">design principles,</p> <p class="sp-text-2">user experience</p>, and 
+            <p class="sp-text-3">front-end development,</p>
+            I have worked on numerous projects that center around <p class="sp-text">crafting intuitive</p> and <p class="sp-text-2">engaging digital experiences.</p>
+        </div>
     </section>
 
-    <section>
+    <section class="my-work">
         <h2>My Work</h2>
         <p>Here are some of the projects I've worked on:</p>
-        <ul>
-            <li><a href="https://link-to-project-1.com" target="_blank">Project 1</a> - A brief description of Project 1.</li>
-            <li><a href="https://link-to-project-2.com" target="_blank">Project 2</a> - A brief description of Project 2.</li>
-            <li><a href="https://link-to-project-3.com" target="_blank">Project 3</a> - A brief description of Project 3.</li>
-        </ul>
+        <div class="my-work-list">
+            <ul class="project-items">
+                <li>
+                    <a href="https://link-to-project-1.com" target="_blank">Project 1</a>
+                    <img src="./img/project-1.jpg" alt="#">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit!</p> 
+                </li>
+                <li>
+                    <a href="https://link-to-project-2.com" target="_blank">Project 2</a>
+                    <img src="./img/project-2.jpg" alt="#">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit!</p> 
+                </li>
+                <li>
+                    <a href="https://link-to-project-3.com" target="_blank">Project 3</a>
+                    <img src="./img/project-3.jpg" alt="#">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit!</p> 
+                </li>
+                <li>
+                    <a href="https://link-to-project-3.com" target="_blank">Project 4</a>
+                    <img src="./img/project-4.jpg" alt="#">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit!</p> 
+                </li>
+            </ul>
+        </div>
     </section>
 
-    <section>
+    <section class="contact-me">
         <h2>Contact Me</h2>
         <p>If you would like to get in touch, feel free to reach out through the following channels:</p>
-        <ul>
-            <li><a href="mailto:your-email@example.com">Email</a></li>
-            <li><a href="https://www.linkedin.com/in/your-linkedin-profile" target="_blank">LinkedIn</a></li>
-            <li><a href="https://twitter.com/your-twitter-handle" target="_blank">Twitter</a></li>
-        </ul>
+        <div class="contact-me-list">
+            <ul class="contact-me-items">
+                <li class="contact-me-mail">
+                    <a href="mailto:your-email@example.com">Email</a>
+                    <i class="ri-mail-line"></i>
+                </li>
+                <li class="contact-me-linkedin">
+                    <a href="https://www.linkedin.com/in/your-linkedin-profile" target="_blank">LinkedIn</a>
+                    <i class="ri-linkedin-box-line"></i>
+                </li>
+                <li class="contact-me-twitter">
+                    <a href="https://twitter.com/your-twitter-handle" target="_blank">Twitter</a>
+                    <i class="ri-twitter-line"></i>
+                </li>
+            </ul>
+        </div>
     </section>
 
-    <section>
-        <h2>Gallery</h2>
-        <p>Here is a photo from one of my recent projects:</p>
-        <img src="https://via.placeholder.com/400" alt="Project Image" width="400" height="300">
+    <section class="gallery">
+        <div class="gallery-content">
+            <h2>Gallery</h2>
+            <p>Here is a photo from one of my recent projects:</p>
+            <div class="gallery-item">
+                <div class="img-item">
+                    <img src="./img/gallery.jpg" alt="Project Image" width="400" height="300">
+                </div>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam error necessitatibus, enim quo iste facilis minima atque, aperiam consequatur explicabo quidem quia perferendis. Eos voluptates praesentium tenetur tempore architecto, deleniti rerum possimus! Commodi dolorum nisi soluta maxime autem corrupti cum perferendis veniam quod harum fuga nam esse, quibusdam at officiis ab, sequi tempore praesentium sed ipsum in facere. Voluptates fuga laborum provident harum iure, ex totam dolorem dolores, beatae accusantium consectetur. Iste placeat quidem distinctio voluptatum nesciunt esse optio totam?</p>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magni quam illo dolore ex nobis debitis quibusdam, ipsa nostrum reiciendis eum quis adipisci quaerat blanditiis ratione assumenda id laboriosam, voluptatum ab!</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta quaerat temporibus saepe, tenetur praesentium ipsam corrupti. Omnis modi, expedita amet possimus qui quaerat tenetur quibusdam quod ullam corrupti, molestias voluptatem minus autem! Neque provident magnam magni? Asperiores maiores et, eveniet natus, alias perspiciatis aspernatur sed vitae ratione magni nemo praesentium quisquam deserunt quos, cupiditate a. Eos dignissimos assumenda illum nihil ad nemo culpa recusandae quo, pariatur dolores, possimus eius maxime porro vitae quidem omnis. Accusantium minus magni atque. Unde adipisci dolorem est blanditiis eum dolor enim id voluptas excepturi doloremque!</p>
+            </div>
+        </div>
     </section>
+    
 
-    <footer>
-        <p>&copy; 2024 Amornthida Butwong. All rights reserved.</p>
+    <footer class="footer">
+        <hr>
+        <p>&copy; 2024 Amornthida Butwong. - All rights reserved.</p>
     </footer>
+    
 </body>
 </html>
