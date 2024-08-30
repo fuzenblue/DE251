@@ -1,0 +1,19 @@
+body {
+    background-color: aliceblue;
+}
+
+a {
+    text-decoration: none;
+    text-transform: capitalize;
+    position: relative;
+
+}
+
+/* @media (max-width: 1040px) {
+    background-color: lightblue;
+}
+
+@media (max-width: 600px) {
+    background-color: green;
+} */
+

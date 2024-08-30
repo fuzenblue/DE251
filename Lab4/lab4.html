@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab 4 - 589</title>
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Style -->
+     <style>
+        :root {
+            --primary: #0011e4;
+            --white: #f4f3ea;
+            --red: #c10000;
+            --green: #dbff08;
+            --pink: #ff4097;
+            --light-pink: #ffc7e7;
+        }
+
+        body {
+            background-color: var(--white);
+        }
+
+        header {
+            position: relative;
+            height: 300px;
+            background: url(./header-bg.jpg)  center center/cover;
+        }
+
+        header h1{
+            font-size: 36px;
+            font-weight: bolder;
+            color: white;
+            text-align: center;
+            line-height: 1;
+            padding-top: 50px;
+        }
+
+        .wave {
+            height: 30px;
+            background-color: var(--white);
+            clip-path: polygon(100% 100%, 0% 100% , 0.00% 1000.00%, 50.00% -333.33%, 100.00% 1000.00%);
+            margin-top: -29px;
+        }
+
+        .nav {
+            background-color: var(--primary);
+        }
+
+        #tab-content {
+            width: 90%;
+            margin-left: 5%;
+            margin-top: 30px;
+        }
+
+        .container-2{
+            height: 400px;
+            padding: 2px;
+            margin-top: 10px;
+        }
+
+        img {
+            width: 80%;
+        }
+
+        form {
+            height: 400px;
+        }
+
+        h1 {
+            color: var(--pink);
+            font-weight: 400;
+        }
+
+        h3 {
+            color: var(--primary);
+            font-weight: 600;
+        }
+     </style>
+</head>
+<body>
+    <header>
+        <h1>Amornthida Butwong</h1>
+        <h1>ID : 66102010589</h1>
+    </header>
+    <div class="wave">
+        <div></div>
+    </div>
+        <!-- Nav pills -->
+    <div class="tab-content" id="tab-content">
+        <ul class="nav nav-pills nav-fill gap-2 p-2 small rounded-5 shadow-sm mt-3 sticky-top" 
+            role="tablist" 
+            style=" --bs-nav-link-color: var(--white); 
+                    --bs-nav-pills-link-active-color: var(--primary); 
+                    --bs-nav-pills-link-active-bg: var(--white);">
+          <li class="nav-item">
+            <a class="nav-link active rounded-5" data-bs-toggle="pill" href="#home">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link rounded-5" data-bs-toggle="pill" href="#first">First Pick</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link rounded-5" data-bs-toggle="pill" href="#second">Second Pick</a>
+          </li>
+        </ul>
+      
+        <!-- Tab panes -->
+        <div class="tab-content" id="tab-content">
+            <div id="home" class="container tab-pane active"><br>
+                <h3>HOME</h3>
+                <p>Copy the HTML codes of selected examples and explain what the codes do</p> 
+                <br> <hr>
+
+                <h3>First Pick : Toggleable / Dynamic Pills</h4> <br>
+                <h1>What the code do?</h1>
+                <p>This allows users to switch between different content sections on a webpage without needing to reload the page.</p>
+                <br>
+                <h1>Why use Toggleable / Dynamic Pills?</h1>
+                <ul>
+                    <li>Dynamic pills improve navigation by allowing users to switch between content sections smoothly.</li>
+                    <li>It reduces page reloads, making the site faster and more responsive.</li>
+                    <li>It include responsive without writing additional code</li>
+                </ul>
+                <br> <hr> <br> 
+
+                <h3>Second Pick : Stacked Form</h4> <br>
+                <h1>What the code do?</h1>
+                <p>This is a common layout for forms on smaller screens or in situations where space is limited.</p> <br>
+                <h1>Why use Toggleable / Dynamic Pills?</h1>
+                <ul>
+                    <li>Responsive Design are useful on mobile devices where horizontal space is limited.</li>
+                    <li>Stacked forms are simple to implement and work well for forms with fewer fields.</li>
+                </ul> 
+                <br> <hr> <br><br>
+            </div>
+
+            <div id="first" class="container tab-pane fade"><br>
+                <h3>First Pick : </h3> <br>
+                <h4>Toggleable / Dynamic Pills</h4>
+                <p>This allows users to switch between different content sections on a webpage without needing to reload the page.</p>
+
+                <br>
+
+                <img src="./one-pick.png" alt="">
+                <hr >
+
+                <div class="container-2">
+                    <h2>Toggleable Pills</h2>
+                    <br>
+                    <!-- Nav pills -->
+                    <ul class="nav nav-pills bg-light mt-2 p-1 justify-content-center" role="tablist">
+                      <li class="nav-item p-1">
+                        <a class="nav-link active" data-bs-toggle="pill" href="#home2">Home</a>
+                      </li>
+                      <li class="nav-item p-1">
+                        <a class="nav-link" data-bs-toggle="pill" href="#menu1">Menu 1</a>
+                      </li>
+                      <li class="nav-item p-1">
+                        <a class="nav-link" data-bs-toggle="pill" href="#menu2">Menu 2</a>
+                      </li>
+                    </ul>
+                  
+                    <!-- Tab panes -->
+                    <div class="tab-content bg-light">
+                      <div id="home2" class="container tab-pane active"><br>
+                        <h3>HOME</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                      </div>
+                      <div id="menu1" class="container tab-pane fade"><br>
+                        <h3>Menu 1</h3>
+                        <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                      </div>
+                      <div id="menu2" class="container tab-pane fade"><br>
+                        <h3>Menu 2</h3>
+                        <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.</p>
+                      </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="second" class="container tab-pane fade"><br>
+                <h3>Second Pick : </h3>
+
+                <h4>Stacked Form</h4>
+                <p>This is a common layout for forms on smaller screens or in situations where space is limited.</p>
+                <br>
+
+                <img src="./two-pick.png" alt="">
+                <hr >
+
+                <h2>Stacked Form</h2>
+                <br>
+                <form action="./lab4.html">
+                    <div class="mb-3 mt-3">
+                        <label for="email" class="form-label">Email:</label>
+                        <input type="email" class="form-control" id="email" placeholder="Enter email" name="email">
+                    </div>
+                    <div class="mb-3">
+                        <label for="pwd" class="form-label">Password:</label>
+                        <input type="password" class="form-control" id="pwd" placeholder="Enter password" name="pswd">
+                    </div>
+                    <div class="form-check mt-3 mb-3">
+                        <label class="form-check-label">
+                            <input class="form-check-input" type="checkbox" name="remember"> Remember me
+                        </label>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                </form>
+            </div>
+        </div>  
+    </div>
+</body>
+</html>
