@@ -1,0 +1,164 @@
+:root {
+    --info : #c4c3e3;
+    --primary: #504e76;
+    --light: #fdf8e2;
+    --success: #a3b565;
+    --warning: #fcdd9d;
+    --danger: #f1642e;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: var(--light);
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--light);
+    padding: 10px 20px;
+    position: relative;
+}
+
+.logo {
+    font-size: 36px;
+    color: var(--primary);
+    font-weight: bolder;
+}
+
+.search-bar {
+    position: relative;
+    width: 100%;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.search-bar input {
+    padding-left: 40px;
+    width: 100%;
+    border-radius: 50px;
+    background-color: transparent;
+    border-color: var(--info);
+}
+
+.search-bar i {
+    position: absolute;
+    top: 50%;
+    left: 15px;
+    transform: translateY(-50%);
+    font-size: 20px;
+    color: var(--primary);
+}
+
+.profile-pic img{
+    width: 40px;
+    height: 40px;
+    background-image: url(./image/profile.jpg);
+    border-radius: 50%;
+}
+
+.dropdown-menu {
+    min-width: 120px;
+}
+
+.profile-name {
+    font-weight: bold;
+}
+
+.grid-item {
+    background-color: var(--primary);
+    color: var(--warning);
+    height: 36vh;
+    padding: 20px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: first baseline;
+    text-align: left;
+    position: relative;
+}
+
+.grid-item a {
+    text-decoration: none;
+    font-size: 25px;
+    color: #f1642e;
+    position: absolute;
+    right: 20px;
+    bottom: 20px;
+    cursor: pointer;
+}
+
+.grid-item button {
+    height: 40px;
+    width: 40%;
+    text-align: left;
+    padding-left: 15px;
+    background-color: var(--light);
+    color: var(--primary);
+    border: 1px;
+    border-radius: 40px;
+    position: absolute;
+    right: 60px;
+    bottom: 20px;
+    cursor: pointer;
+}
+
+.lab-text {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.lab-desc {
+    font-size: 14px;
+    color: #ccc;
+    text-align: center;
+}
+
+.container {
+    margin-top: 15px;
+}
+
+.btn {
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    margin-top: 15px;
+}
+
+.carousel-inner {
+    margin-top: 90px;
+    height: 320px;
+    display: block;
+}
+
+.carousel-inner img {
+    width: 100%;
+}
+
+.copyright {
+    border-top: 1px solid rgba(255, 255, 255, 0.08);
+    background: var(--bs-dark) !important;
+}
+
+.copyright a {
+    text-decoration: none;
+}
+
+.homepage {
+    display: flex;
+    justify-content: center;
+    margin-top: 60px;
+}
+
+.homepage a {
+    text-decoration: none;
+}
+
+.homepage i {
+    font-size: 40px;
+    color: #a3b565;
+}
