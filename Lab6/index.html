@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dynamic To-Do List</title>
+
+        <!-- STYLE -->
+    <link rel="stylesheet" href="style.css">
+        <!-- SCRIPT -->
+    <script src="./jquery-3.7.1.min.js"></script>
+
+    <script>
+        $(document).ready(function() {
+            // Add task functionality
+            $('#addTask').click(function() {
+                const taskText = $('#taskEnter').val();
+                if (taskText !== '') {
+                    const listItem = $('<li>').text(taskText);
+                    $('#taskList').append(listItem);
+                    $('#taskEnter').val('');
+                }
+            });
+
+            $('#taskList').on('click', 'li', function() {
+                $(this).toggleClass('completed');
+
+                if ($(this).hasClass('completed')) {
+                    $(this).css({
+                        'text-decoration': 'line-through',
+                        'color': 'gray'
+                    });
+                } else {
+                    $(this).css({
+                        'text-decoration': 'none',
+                        'color': 'black'
+                    });
+                }
+            });
+
+            $('#clearCompleted').click(function() {
+                $('#taskList').find('.completed').remove();
+            });
+        });
+    </script>
+</head>
+<body>
+    <div class="wrap">
+        <input type="text" class="task" id="taskEnter" placeholder="Enter Your Task">
+        <button type="submit" class="addBtn" id="addTask">Add</button>
+        <button class="clearBtn" id="clearCompleted">Clear Completed</button>
+    
+        <ul id="taskList"></ul>
+    </div>
+</body>
+</html>
