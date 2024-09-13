@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pay rolls page</title>
+
+    <!-- STYLE -->
+     <link rel="stylesheet" href="style.css">
+    <!-- JAVA SCRIPT -->
+    <script src="./main.js"></script>
+</head>
+<body>
+    <div class="header">
+        <div class="logo">
+            <img src="./logo.png" alt="">
+        </div>
+
+        <div class="wrap">
+            <h1>My Sweet Bakery</h1>
+            <p>Employee Payroll</p>
+            
+
+            <form class="employeeform" id="employeeForm" action="#">
+                <label for="firstName">First Name :</label>
+                <input type="text" id="firstName" class="firstname" placeholder="Enter Your First Name" required> <br>
+
+                <label for="lirstName">Last Name :</label>
+                <input type="text" id="lastName" class="firstname" placeholder="Enter Your Last Name" required> <br>
+
+                <label for="hourlyRate">Hourly Salary :</label>
+                <input type="text" id="hourlyRate" class="hourlyRate" max="8" placeholder="0.00" required>
+
+                <br>
+                <table class="weekly_hours">
+                    <label for="weekly_hours">Weekly Hours</label>
+                    <tr>
+                        <th>Mon.</th>
+                        <th>Tue.</th>
+                        <th>Wed.</th>
+                        <th>Thu.</th>
+                        <th>Fri.</th>
+                        <th>Sat.</th>
+                        <th>Sun.</th>
+                    </tr>
+                    <tr>
+                        <td><input type="text" max="8" name="hours_worked" id="hoursWorked" placeholder="0.00" required></td>
+                        <td><input type="text" max="8" name="hours_worked" id="hoursWorked" placeholder="0.00" required></td>
+                        <td><input type="text" max="8" name="hours_worked" id="hoursWorked" placeholder="0.00" required></td>
+                        <td><input type="text" max="8" name="hours_worked" id="hoursWorked" placeholder="0.00" required></td>
+                        <td><input type="text" max="8" name="hours_worked" id="hoursWorked" placeholder="0.00" required></td>
+                        <td><input type="text" max="8" name="hours_worked" id="hoursWorked" placeholder="0.00" required></td>
+                        <td><input type="text" max="8" name="hours_worked" id="hoursWorked" placeholder="0.00" required></td>
+                    </tr>
+                </table>
+
+                <button type="button" id="processBtn">Process</button>
+                <button type="reset" id="resetBtn">Reset</button>
+            </form>
+
+            <hr>
+
+            <form class="resultForm" id="resultForm">
+                <label for="fullName">Full Name :</label>
+                <input type="text" id="fullName" readonly> <br>
+                
+                <label for="weeklyWage">Weekly Earning :</label>
+                <input type="text" id="weeklyWage" readonly>
+            </form>
+        </div>
+    </div>
+
+    <!-- Alert -->
+    <div id="customAlert" class="modal">
+        <div class="modal-content">
+            <span class="close-btn">&times;</span>
+            <p id="alertMessage"></p>
+        </div>
+    </div>
+        
+    <!-- JAVA SCRIPT
+    <script src="./main.js"></script> -->
+
+    
+</body>
+</html>
