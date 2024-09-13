@@ -12,6 +12,33 @@
 
     <script>
         $(document).ready(function() {
+            // Load tasks from local storage when the page loads
+            function loadTasks() {
+                const tasks = JSON.parse(localStorage.getItem('tasks')) || [];
+                tasks.forEach(task => {
+                    const listItem = $('<li>').text(task.text);
+                    if (task.completed) {
+                        listItem.addClass('completed').css({
+                            'text-decoration': 'line-through',
+                            'color': 'gray'
+                        });
+                    }
+                    $('#taskList').append(listItem);
+                });
+            }
+
+            // Save tasks to local storage
+            function saveTasks() {
+                const tasks = [];
+                $('#taskList li').each(function() {
+                    tasks.push({
+                        text: $(this).text(),
+                        completed: $(this).hasClass('completed')
+                    });
+                });
+                localStorage.setItem('tasks', JSON.stringify(tasks));
+            }
+
             // Add task functionality
             $('#addTask').click(function() {
                 const taskText = $('#taskEnter').val();
@@ -19,6 +46,8 @@
                     const listItem = $('<li>').text(taskText);
                     $('#taskList').append(listItem);
                     $('#taskEnter').val('');
+
+                    saveTasks();
                 }
             });
 
@@ -36,11 +65,15 @@
                         'color': 'black'
                     });
                 }
+                saveTasks();
             });
 
             $('#clearCompleted').click(function() {
                 $('#taskList').find('.completed').remove();
+                saveTasks();
             });
+
+            loadTasks();
         });
     </script>
 </head>
