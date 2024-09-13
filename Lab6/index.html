@@ -79,11 +79,17 @@
 </head>
 <body>
     <div class="wrap">
-        <input type="text" class="task" id="taskEnter" placeholder="Enter Your Task">
-        <button type="submit" class="addBtn" id="addTask">Add</button>
-        <button class="clearBtn" id="clearCompleted">Clear Completed</button>
-    
-        <ul id="taskList"></ul>
+        <h1>To-Do List</h1>
+
+        <form action="#" class="formInput">
+            <input type="text" class="task" id="taskEnter" placeholder="Enter Your Task">
+            <button type="submit" class="addBtn" id="addTask">Add</button>
+            <button class="clearBtn" id="clearCompleted">Clear Completed</button>
+        </form>
+        
+        <div class="input-result">
+            <ul id="taskList" class="task-List"></ul>
+        </div>
     </div>
 </body>
 </html>
