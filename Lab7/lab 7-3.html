@@ -1,0 +1,23 @@
+<html>
+    <head>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    </head>
+    <body>
+        <h2>jQuery and AJAX is FUN!!!</h2>
+
+        <div id="hidden" style="display: none;">
+            <p id="mytext">This is an important line.</p>
+        </div>
+
+        <div id="content"></div> <br>
+
+        <button id="loadBtn">Show Text</button>
+        
+        
+        <script>
+            $("#loadBtn").click(function() {
+                $("#content").html($("#hidden #mytext").html());
+            });
+        </script>
+    </body>
+</html>
