@@ -3,22 +3,139 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Test Write</title>
-    <style>
+    <title>Document</title>
 
-    </style>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./index.css">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./index.js"></script>
 </head>
 <body>
-    <a href="#">home</a> <br>
-    <ul>
-        l
-    </ul>
-    <ul>
-        0
-    </ul>
-    <b>About Me</b> <br>
-    <strong>important</strong>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione odit incidunt officia porro hic reiciendis consectetur pariatur, facilis dolorem illo labore animi ducimus ut corrupti enim magnam placeat soluta nisi dolor magni cumque molestiae! Voluptatem officiis a reiciendis sapiente animi.</p>
+    <div class="container">
+
+        <div class="test">
+            <div class="lol">
+                test position
+            </div>
+        </div>
+        <div class="alert alert-success alert-dismissible">
+            <button class="btn-close" data-bs-dismiss="alert"></button>
+            <p>tried</p>
+        </div>
+
+        p<sub>sub</sub>
+        p<sup>sup</sup>
+        
+        <button class="btn btn-danger btn-block">Lorem, ipsum dolor.</button>
+        <a href="#" class="btn btn-primary disable">My link</a>
+
+        <span class="badge bg-secondary rounded-pill">New Comment</span>
+
+        <div class="progress">
+            <div class="progress-bar bg-secondary progress-bar-striped progress-bar-animated"></div>
+        </div>
+
+        <div class="spinner-border"></div>
+        <div class="spinner-grow"></div>
+    </div>
+
+    <!-- JavaScrip Event -->
+    <button onclick="myFunction()">Click me.</button>
+    <div onmouseover="this.style.backgroundColor='red'">myDIV.</div>
+
+
+    <p id="demo" class="test"></p>
+    <p class="test"></p>
+
+    <img id="image" src="smiley.gif">
+
+    <input type="text" id="myText" value="Hello">
+
+
+    <script>
+        document.getElementById("demo").innerHTML= "Hello";
+        document.getElementsByTagName("p")[0].innerHTML = "Hello";
+        document.getElementsByClassName("test")[0].innerHTML = "Hello";
+        document.getElementById("demo").style.color = "blue";
+        document.getElementById("demo").style.fontSize = "40px";
+        document.getElementById("demo").style.display = "none";
+        document.getElementById("demo").addEventListener("click", myFunction);
+
+        document.getElementById("image").src = "pic_mountain.jpg";
+
+        document.getElementById("myText").value = "Have a nice day!";
+    </script>
+
+
+    <script>
+
+        // Make the function return "Hello" function display inner HTML
+        function myFunction() {
+          return "Hello";
+        }
+        document.getElementById("demo").innerHTML = myFunction();
+
+        // alert by nameFunction.Attribute
+        alert(person.name + " is " + person.age);
+        
+        // js string method
+        let txt = "Hello World";
+        txt = txt.replace("Hello", "Welcome");
+        txt = txt.toUpperCase(); txt = txt.toLowerCase();
+
+        // js arrays
+        const cars = ["Saab", "Volvo", "BMW"];
+        let x = cars[1]; // let x = "Volvo";
+        cars[0] = "Ford"; // ["Ford", "Volvo", "BMW"]
+        alert(cars.length);
+
+        
+        fruits.pop(); // remove last item of fruits array.
+        fruits.push("Kiwi"); // add "Kiwi" to the fruits array.
+        fruits.splice(1, 2); // remove by index.
+        fruits.sort(); // sort array ตามลำดับตัวอักษร
+
+        // jQuery event
+        $("p").click(function(){
+            $(this).hide(); // $(this).hide("slow");
+            $("p").show();
+            $("p").toggle();
+        });
+
+        //  fade event
+        $("div").fadeTo("slow", 0.2);
+        $("div").slideDown();
+
+        $("div").animate({height: '500px'});
+        $("div").animate({ 
+            opacity : '0.4',
+            height: '500px',
+            width: '500px'});
+
+        $("button").click(function(){
+            $("div").fadeToggle(1000);
+            $("div").slideToggle();
+        });
+
+        $("div").remove();
+        $("div").remove(".test, .demo");
+
+        $("div").stop();
+
+        $("p").addClass("important");
+        $("p").click(function(){
+            $(this).toggleClass("important");
+        });
+
+        $("p").css("background-color", "pink");
+        $("div").height(500).width(500);
+
+        $("span").parent(); // get direct parent of <span> element.
+        $("div").find("span"); // รับ <span> ทั้งหมดที่อยู่ใน <div>
+        $("div").first(); // get first <div> element in the document.
+
+    </script>
+  
 </body>
 </html>
